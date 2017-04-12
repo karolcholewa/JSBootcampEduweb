@@ -1,2 +1,2 @@
 # JSBootcampEduweb
-Zadania na JavaScript Bootcamp / Eduweb
+Zadania na JavaScript Bootcamp / Eduweb.pl
