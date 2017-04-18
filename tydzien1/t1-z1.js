@@ -4,23 +4,23 @@
   
   var price = 50; //cena bazowa za produkt
   var quantity = 33; //ilosc zakupionych produktow
-  var discount = 0; //naliczony rabat
+  var discount = 0; //naliczony rabat w %
+  var total;
 
   //za pomocą instrukcji if/else
   if(quantity >= 5 && quantity <= 20){
-    discount = 0.05;
-    console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 5% rabatu to " + (price  - price * discount) +"zł.");
-  }
+    discount = 5;
+      }
   else if(quantity >= 21 && quantity <= 50){
-    discount = 0.1;
-    console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 10% rabatu to " + (price  - price * discount) + "zł.");
-    }
+    discount = 10;
+       }
   else if(quantity >= 51 && quantity <= 100){
-    discount = 0.2;
-    console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 20% rabatu to " + (price  - price * discount) + "zł.");
-  }
-  else 
-    console.log("Cena produktu to " + price + "zł.");
+    discount = 20;
+     }
+  
+  total = price - (price * (discount / 100));
+    
+   console.log("Podstawowa cena produktu to " + price + "zł, a po rabacie w wysokości " + discount + "% wynosi " + total + "zł");
 
   //To samo za pomocą instrukcji switch
   switch (true) {
