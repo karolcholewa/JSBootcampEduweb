@@ -5,8 +5,10 @@ function sum(array) {
   for(var i = 0; i < array.length; i++){
     sum += array[i];
     }
-  return sum; 
+  return sum; //funkcja zwraca sumę przekazanych jej argumentów w tablicy
 }
 
-console.log(sum([22,10,5,4]));
+var arr = [22, 10, 5, 4]; // przykładowa tablica
+
+console.log(sum(arr));
 
