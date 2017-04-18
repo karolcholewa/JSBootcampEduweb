@@ -20,14 +20,20 @@ var movies = {
     ]
 };
 
-for (var key in movies){
+function moviesLib(catalog) {
+
+    for (var key in movies){
+
+      console.log(key + ":");
+
+      for (var i = 0; i < movies[key].length; i++) {
+           console.log(movies[key][i]);
+      };
+
+      console.log("====================")
+
+    };
+}; 
+
+moviesLib(movies);
   
-  console.log(key + ":");
-              
-  for (var i = 0; i < movies[key].length; i++) {
-       console.log(movies[key][i]);
-  };
-  
-  console.log("====================")
-  
-};
