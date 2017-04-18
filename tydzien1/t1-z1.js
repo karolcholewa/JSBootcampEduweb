@@ -5,7 +5,7 @@
   var price = 50; //cena bazowa za produkt
   var quantity = 33; //ilosc zakupionych produktow
   var discount = 0; //naliczony rabat w %
-  var total;
+  var total; //całkowita cena po uwzględnieniu rabatu
 
   //za pomocą instrukcji if/else
   if(quantity >= 5 && quantity <= 20){
@@ -22,26 +22,27 @@
     
    console.log("Podstawowa cena produktu to " + price + "zł, a po rabacie w wysokości " + discount + "% wynosi " + total + "zł");
 
-  //To samo za pomocą instrukcji switch
+  
+//To samo za pomocą instrukcji switch
   switch (true) {
     case quantity >= 5 && quantity <= 20:
-    discount = 0.05;
-    console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 5% rabatu to " + (price  - price * discount) +"zł.");
-      break;
+    discount = 5;
+    break;
   case quantity >= 21 && quantity <= 50:
-      discount = 0.1;
-      console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 10% rabatu to " + (price  - price * discount) + "zł.");
+      discount = 10;
+      
       break;
 
     case quantity >= 51 && quantity <= 100:
-      discount = 0.2;
-      console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z 20% rabatu to " + (price  - price * discount) + "zł.");
+      discount = 20;
+      
       break;
 
     default:
      console.log("Cena produktu to " + price + "zł.");
 
   };
+  console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z " + discount + "% rabatu to " + (price  - (price * discount/100) +"zł.");
  
 })();
 
