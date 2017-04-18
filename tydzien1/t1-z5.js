@@ -11,7 +11,7 @@ function getDate() {
   if(dd < 10) {
     dd = "0" + dd;
   }
-  return console.log(dd + "." + mm + "." + yyyy);
+  return (dd + "." + mm + "." + yyyy);
 };
 
-getDate();
+console.log(getDate());
