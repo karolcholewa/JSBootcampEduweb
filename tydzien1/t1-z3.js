@@ -6,7 +6,7 @@ toBoolean(20); // zwraca wartość true
 toBoolean(“”); // zwraca wartość false
 */
 
-var toBoolean = function(arg){
+function toBoolean(arg){
   if(arg === undefined && arguments.length === 0) {
     console.log("Argument nie został podany.");
     }
