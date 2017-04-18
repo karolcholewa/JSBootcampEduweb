@@ -11,6 +11,7 @@ function toBoolean(arg){
     console.log("Argument nie został podany.");
     }
  return arg = Boolean(arg);
+ //return !!arg; 
 
 } 
 console.log(toBoolean());
