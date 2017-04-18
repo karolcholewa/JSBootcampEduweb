@@ -1,6 +1,6 @@
 /*Utwórz funkcję o nazwie getDate, która po wywołaniu zwróci aktualną, sformatowaną datę. Data powinna być w formacie dd.mm.rrrr, czyli np. 17.04.2017.Przykładowe użycie tej funkcji powinno wyglądać następująco:getDate(); // zwraca np. “17.04.2017”*/
 
-var getDate = function() {
+function getDate() {
   var todd = new Date();
   var dd = todd.getDate();
   var mm = todd.getmm() + 1;
