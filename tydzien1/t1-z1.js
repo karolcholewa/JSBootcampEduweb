@@ -35,6 +35,7 @@
                 console.log("Cena produktu to " + price + "zł.");
 
         };
-        console.log("Podstawowa cena produktu to " + price + "zł, a po obniżce z " + discount + "% rabatu to " + (price - (price * discount / 100) + "zł.");
+        total = price - (price * (discount / 100));
+        console.log("Podstawowa cena produktu to " + price + "zł, a po rabacie w wysokości " + discount + "% wynosi " + total + "zł");
 
         })();
