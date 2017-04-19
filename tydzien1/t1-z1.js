@@ -5,8 +5,10 @@
         var quantity = 33; //ilosc zakupionych produktow
         var discount = 0; //naliczony rabat w %
         var total; //całkowita cena po uwzględnieniu rabatu
+        
 
         //za pomocą instrukcji if/else
+function priceCalculator(quantity){
         if (quantity >= 5 && quantity <= 20) {
             discount = 5;
         } else if (quantity >= 21 && quantity <= 50) {
@@ -16,8 +18,11 @@
         }
 
         total = price - (price * (discount / 100));
+        return total;
+};
 
-        console.log("Podstawowa cena produktu to " + price + "zł, a po rabacie w wysokości " + discount + "% wynosi " + total + "zł");
+        //wywołujemy funkcję
+        console.log("Podstawowa cena produktu to " + price + "zł, a po rabacie wynosi " + priceCalculator(quantity) + "zł");
 
 
         //To samo za pomocą instrukcji switch
