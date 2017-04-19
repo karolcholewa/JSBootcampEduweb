@@ -10,5 +10,15 @@ function sum(array) {
 
 var arr = [22, 10, 5, 4]; // przykładowa tablica
 
-console.log(sum(arr));
+console.log( sum(arr) );
+
+//Z metodą forEach na podanej tablicy
+function sum(array){
+  var sum = 0;
+  array.forEach(function(elem){
+  sum += elem;
+  });
+ return sum;
+};
+console.log( sum(arr) );
 
