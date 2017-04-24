@@ -1,0 +1,10 @@
+#container {
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    margin-top: 25px;
+}
+
+.hide {
+    display: none;
+}
