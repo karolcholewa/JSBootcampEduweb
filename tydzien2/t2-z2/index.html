@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <h1>Walidator Formularza</h1>
-    <h2>Tydzień 2 - Zadanie 2</h2>
-    <p>Stwórz prosty walidator formularza, który zawierał będzie pola &lt;input&gt; o typach “text”, “email”, “number” oraz element &lt;textarea&gt;. Dodaj do elementu &lt;form&gt; atrybut novalidate, aby wyłączyć domyślną walidację przeglądarki. Od Ciebie zależy, czy chcesz wyświetlać komunikaty o błędach czy tylko podświetlać niepoprawnie uzupełnione pola np. na czerwono. Za poprawnie uzupełnione pole &lt;input&gt; o typie “text” lub pole &lt;textarea&gt;uznajemy takie, które ma wpisany przynajmniej jeden znak. W przypadku pola o typie “email” sprawdź czy zawiera ono znak @, a w przypadku pola o typie “number” czy podana wartość jest liczbą (pamiętaj, że DOM zwróci Ci zawsze wartość o typie String, więc musisz znaleźć sposób, jak sprawdzić czy string ten zawiera wyłącznie liczbę).Uwaga: Jeśli stworzysz pole &lt;input&gt; o typie “number” to w niektórych przeglądarkach nie będzie możliwości wpisania innych znaków niż liczby. Mimo to napisz logikę, która takąwalidację wykona, a aby móc wprowadzić inne znaki niż tylko liczby, zmień na czas testów atrybut type pola &lt;input&gt; z “number” na “text”.</p>
-
-    <form attribute="" action="" method="post">
-        <legend>Form</legend>
-        <input type="text" name="" id="">
-        <input type="email" name="" id="">
-        <input type="number" name="" id="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="Submit">
-    </form>
-
+   <div class="container">
+           <h1>Walidator Formularza</h1>
+           <h2>Tydzień 2 - Zadanie 2</h2>
+           <p>Stwórz prosty walidator formularza, który zawierał będzie pola &lt;input&gt; o typach “text”, “email”, “number” oraz element &lt;textarea&gt;. Dodaj do elementu &lt;form&gt; atrybut novalidate, aby wyłączyć domyślną walidację przeglądarki. Od Ciebie zależy, czy chcesz wyświetlać komunikaty o błędach czy tylko podświetlać niepoprawnie uzupełnione pola np. na czerwono. Za poprawnie uzupełnione pole &lt;input&gt; o typie “text” lub pole &lt;textarea&gt;uznajemy takie, które ma wpisany przynajmniej jeden znak. W przypadku pola o typie “email” sprawdź czy zawiera ono znak @, a w przypadku pola o typie “number” czy podana wartość jest liczbą (pamiętaj, że DOM zwróci Ci zawsze wartość o typie String, więc musisz znaleźć sposób, jak sprawdzić czy string ten zawiera wyłącznie liczbę).Uwaga: Jeśli stworzysz pole &lt;input&gt; o typie “number” to w niektórych przeglądarkach nie będzie możliwości wpisania innych znaków niż liczby. Mimo to napisz logikę, która taką walidację wykona, a aby móc wprowadzić inne znaki niż tylko liczby, zmień na czas testów atrybut type pola &lt;input&gt; z “number” na “text”.</p>
+       
+           <form action="#" id="myForm" novalidate>
+               
+               <input type="text" name="your-nick" placeholder="Enter your nickname" data-error="Enter your nickname" class="error">
+               <input type="email" name="your-email" placeholder="Enter your email address" data-error="Enter your email address">
+               <input type="number" name="your-id-number" placeholder="Enter your ID number" data-error="Enter your ID number">
+               <textarea name="your-message" placeholder="Type in your message" data-error="Type in your message" rows="10" cols="50"></textarea>
+               <button type="submit">Submit</button>
+           </form>
+           
+       </div>
 
     <script src="js/scripts.js"></script>
 </body>
