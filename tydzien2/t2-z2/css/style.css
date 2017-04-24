@@ -1,1 +1,23 @@
+.error {
+    border-color: red;
+}
 
+ul {
+    background-color: bisque;
+    color: red;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+form input {
+    padding: 0.5em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+form button {
+    top: 50px;
+    display: block;
+    padding: 0.5em;
+    margin-top: 1em;
+}
