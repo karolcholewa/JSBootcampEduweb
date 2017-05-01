@@ -1,8 +1,14 @@
+//ROZWIAZANIE
+Database.prototype = Object.create(EventEmitter.prototype);
+Database.prototype.constructor = Database;
+
+
 function EventEmitter() {
  
     this.events = {};
  
 }
+
  
 EventEmitter.prototype.on = function(type, fn) {
  
@@ -85,6 +91,4 @@ setTimeout(function() {
     db.disconnect();
 }, 5000);
 
-//ROZWIAZANIE
-Database.prototype = Object.create(EventEmitter.prototype);
-Database.prototype.constructor = Database;
+
