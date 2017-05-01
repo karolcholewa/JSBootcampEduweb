@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>t2-z5</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<h1>Zadanie 5 Funkcja debounce</h1>
+<p>
+Stwórz funkcję o nazwie debounce , która przyjmie przy wywołaniu dwa argumenty.
+Pierwszy z nich to inna funkcja do późniejszego wywołania, a drugi to czas w
+milisekundach. Po takim wywołaniu, funkcja ta powinna zwrócić nową funkcję, którą
+można zapisać np. w zmiennej. Następnie tę nową funkcję będzie można wielokrotnie
+wywoływać (a ona powinna wywołać pierwotnie przekazaną funkcję), jednak jeśli czas
+pomiędzy poszczególnymi wywołaniami będzie krótszy, niż podany wcześniej (wspomnianyargument z czasem w milisekundach), to funkcja nie powinna nic zrobić, ale ustawić licznik
+na kolejne Xms i dopiero wtedy się wywołać.
+Rozwiązania typu debounce stosuje się np. przy obsłudze zdarzenia scroll w
+przeglądarkach, które wywoływane jest bardzo wiele razy. Jeśli nie chcemy, aby nasza
+funkcja negatywnie wpływała na wydajność podczas scrollowania, a wystarczy, że wywoła
+się np. 100ms po zakończeniu scrollowania, wtedy stosujemy funkcję debounce. Innym
+przykładem jest np. zdarzenie resize , które też jest wielokrotnie wywoływane podczas
+skalowania okna przeglądarki, a nam może zależeć, aby wywołać pewien kod dopiero
+wtedy, gdy taka akcja się zakończy.
+Całość przetestować możesz z użyciem tego kodu: https://pastebin.com/J0BJVqtR. Twoim
+zadaniem jest dopisanie funkcji debounce , aby ten kod zaczął działać.
+Podpowiedź: będziesz potrzebował funkcji setTimeout i clearTimeout .</p>
+
+
+   
+    <script src="scripts.js"></script>
+</body>
+
+</html>
