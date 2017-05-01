@@ -1,32 +1,28 @@
-(function() {
+(function () {
 
-    function debounce(fn, time) {
-        // docelowo powinna być wywoływana
-        // funkcja fn w ten sposób fn()
-
-        // część kodu tutaj
-
-        return function() {
-            // pozostały kod tutaj
+        function debounce(fn, time) {
+            
+            var timer = null;
+            
+            return function(){
+                
+                clearTimeout(timer);
+                timer = setTimeout(function(){
+                    fn();
+                }, time)
+               
+        }
         };
-    }
 
-    var handleScroll = debounce(function() {
-        console.log("Scrollujemy!");
-    }, 200);
+            var handleScroll = debounce(function () {
+                console.log("scroluje");
+            }, 500);
+    
+            var handleResize = debounce(function(){
+                console.log("zmieniam rozmiar");
+            }, 250);
 
-    // w tym miejscu pod handleScroll
-    // powinna być nowa funkcja
+            window.addEventListener("scroll", handleScroll, false);
+            window.addEventListener("resize", handleResize, false);
 
-    // Przypisanie zdarzenia "scroll"
-    window.addEventListener("scroll", handleScroll, false);
-
-    // Możesz również przetestować funkcję
-    // ze zdarzeniem "resize" skalując okno
-    var handleResize = debounce(function() {
-        console.log("Zmieniamy rozmiar okna!");
-    }, 100);
-
-    window.addEventListener("resize", handleResize, false);
-
-})();
+        })();
