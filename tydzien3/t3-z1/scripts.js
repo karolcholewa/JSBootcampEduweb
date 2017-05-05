@@ -3,25 +3,42 @@
 //- zawsze sprawdz czy metoda juz istnieje
 //- nie nadpisuj prototypu
 
-(function() {
-    
-    //sprawdzam czy metoda juz istnieje
-    if ( typeof String.prototype.echo === "function" ) return;
-    
+(function () {
+
+    //sprawdzam czy metoda juz istnieje; jesli tak to nic nie robie;
+    if (typeof String.prototype.echo === "function") return;
+
     //rozszerzamy prototyp - odwolujemy sie do konstruktora/klasy 
     //metoda powinna przyjmowac ilosc powtorzen stringu
-    
-    String.prototype.echo = function(num){
-        
+
+    String.prototype.echo = function (num) {
+
         var output = "";
-        
-        for (var i = 0; i < num; i ++) {
-            
+
+        for (var i = 0; i < num; i++) {
+
             output += this;
         }
-        
+
         return output;
     };
-    
-       
+
+    console.log("skrypt sie laduje");
+
+
+
+    //wlasciwy Polyfill
+
+    /*
+        if ( typeof String.prototype.repeat !== "function" ) return;
+        String.prototype.repeat = function(num){
+            
+            var output = "";
+            for (var i = 0; i < num; i ++) {
+                output += this;
+            }
+            return output;
+        };
+    */
+
 })();
