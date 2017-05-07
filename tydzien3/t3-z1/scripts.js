@@ -13,11 +13,12 @@
 
     String.prototype.echo = function (num) {
 
-        var output = "";
+        var output = "",
+            myString = this.toString();
 
         for (var i = 0; i < num; i++) {
 
-            output += this;
+            output += myString;
         }
 
         return output;
@@ -39,6 +40,12 @@
             }
             return output;
         };
+    */
+    
+    /*Metoda alternatywna
+    
+    return (new Array(num + 1)).join(this.toString());
+    
     */
 
 })();
