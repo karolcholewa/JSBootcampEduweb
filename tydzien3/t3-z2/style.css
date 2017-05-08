@@ -1,0 +1,11 @@
+.hidden {
+display: none;
+}
+
+#button {
+    position: fixed;
+    top: 125px;
+    width: 75px;
+    padding: 1em;
+    font-weight: bold;
+}
