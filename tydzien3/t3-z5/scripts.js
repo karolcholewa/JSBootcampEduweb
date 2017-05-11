@@ -9,18 +9,18 @@ function getPage() {
 
     //poniewaz pageId to tablica z dwoma elementami, to usuwam pierwszy element
 
-    if (pageId !== null) {
+    if (pageId) {
         pageId.shift();
         output.textContent = "ID strony to: " + pageId;
+
     } else {
         output.textContent = "Strona nie posiada ID numerycznego";
+
     }
 
     document.body.appendChild(output);
-     if(pageId !== null) {
-        return parseInt(pageId);
-    } else return null; 
-
+    
+    return pageId ? parseInt(pageId) : null;
 }
 
 var button = document.getElementById("button");
