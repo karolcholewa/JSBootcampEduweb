@@ -19,11 +19,13 @@ function getPage() {
     }
 
     document.body.appendChild(output);
-    
-    return pageId ? parseInt(pageId) : null;
+
+    if (pageId) {
+        return parseInt(pageId, 10);
+    } else {
+        return null;
+    }
 }
 
 var button = document.getElementById("button");
-button.addEventListener("click", function () {
-    getPage();
-});
+button.addEventListener("click", getPage);
