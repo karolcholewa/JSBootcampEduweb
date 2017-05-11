@@ -17,6 +17,9 @@ function getPage() {
     }
 
     document.body.appendChild(output);
+     if(pageId !== null) {
+        return parseInt(pageId);
+    } else return null; 
 
 }
 
