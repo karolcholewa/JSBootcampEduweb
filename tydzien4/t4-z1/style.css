@@ -1,0 +1,23 @@
+ul.nav li {
+    display: inline;
+    margin-right: 3em;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+.myClass {
+    font-weight: bold;
+    color: #7bc143;
+}
+
+input.myClass {
+    width: 25px;
+    height: 25px;
+}
+
+.inline {
+    display: inline;
+}
