@@ -1,0 +1,32 @@
+#container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+button {
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    left: 250px;
+    top: 50px;
+}
+
+ul {
+    position: relative;
+    top: 80px;
+    list-style: none;
+}
+
+ul.error {
+    color: red;
+}
+
+li {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 1.5em;
+}
+
+p {
+    margin: 0.25em;
+}
